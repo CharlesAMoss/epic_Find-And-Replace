@@ -5,14 +5,16 @@
 _User enters a phrase and two words, the first is replaced with the second._
 
 ## Demo
+
+_Veiw a demo on [Codepen](http://codepen.io/CharlesAMoss/full/dYYqaO)._
+
 ## Setup
 _Clone and open index.html in your browser._  
 
 ## Technologies Used
 _This project makes use of: [Mocha](https://mochajs.org/), and [Chai](http://chaijs.com/) as testing-frameworks. And has a dependency for jQuery._
 
-## To Do
-## Aside
+
 ### Legal
 Copyright (c) 2015 Charles A Moss
 
