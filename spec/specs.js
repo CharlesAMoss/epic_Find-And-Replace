@@ -8,7 +8,7 @@ describe('findReplace', function() {
     });
 
     it("handles common punctution correctly", function() {
-        expect(findReplace('hello, world!', 'hello', 'goodbye')).to.equal('goodbye world');
+        expect(findReplace('Hello, world!', 'Hello', 'Goodbye')).to.equal('Goodbye, world!');
     });
-      
+
 });
