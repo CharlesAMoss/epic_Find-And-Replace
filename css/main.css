@@ -25,7 +25,6 @@ header {
     background: #f5f2f0;
     border-bottom: 1px solid #f5f2f0;
     padding: 100px 0 50px 0;
-    margin-bottom: 40px;
 }
 .wrapper {
     min-height: 100%;
@@ -56,6 +55,21 @@ header {
     padding: 20px;
     color: #2d3438;
 }
+.footer__content {
+    padding: 20px;
+    color: #2d3438;
+}
+.footer__content p a {
+    text-decoration: none;
+    color: #2d3438;
+}
+
+.footer__content p a:hover {
+    text-decoration: underline;
+    color: #0b0d0e;
+}
+
+
 
 /* typography =============== */
 
@@ -80,6 +94,7 @@ header {
 .main__result {
     font-size: 1.5rem;
     color: #bb0f00;
+    margin-bottom: 1em;
 }
 .main__result p:before {
     content: ">> ";
@@ -100,6 +115,7 @@ header {
     padding: 40px;
     border: 1px solid #d6cac2;
     border-radius: 4px;
+    margin-bottom: 1em;
 }
 .form__group {
     padding: 0 0 20px 0;
@@ -110,7 +126,7 @@ header {
     letter-spacing: .05em;
 }
 .form__input {
-    margin-top: 1em;
+    margin: 1em 0;
     padding: 15px;
     width: 90%;
     border-radius: 4px;
