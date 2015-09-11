@@ -1,4 +1,4 @@
-var magic = function (sadness) {
+var findReplace = function (phrase, find, replace) {
 
     return 'happiness';
 };
