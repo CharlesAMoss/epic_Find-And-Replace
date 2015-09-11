@@ -1,6 +1,17 @@
 var findReplace = function (phrase, find, replace) {
 
-    return 'happiness';
+    var splitString = phrase.split(' ');
+    var output = "";
+    for (var string of splitString) {
+        if (find.indexOf(string) > -1) {
+            output = output + replace + " ";
+        } else {
+            output = output + string + " ";
+        }
+    }
+    var result = output.slice(0, -1);
+
+    return result;
 };
 
 // $(document).ready(function() {
