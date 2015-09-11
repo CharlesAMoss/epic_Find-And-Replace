@@ -3,7 +3,7 @@ describe('findReplace', function() {
     expect(findReplace('hello', 'goodbye', 'hello world')).to.be.a('string');
   });
 
-  // it("inputs 'sadness' and outputs 'happiness'", function() {
-  //   expect(magic('sadness')).to.equal('happiness');
-  // });
+  it("intputs a phrase, and two words and replace the first with the second word", function() {
+    expect(findReplace('hello', 'goodbye', 'hello world')).to.equal('goodbye world');
+  });
 });
