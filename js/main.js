@@ -1,7 +1,7 @@
 var findReplace = function (phrase, find, replace) {
 
     var splitString = phrase.split(/\s*\b\s*/);
-    var punctuation = [",", ".", "!", "?", ";", ":", "'", '"'];
+    var punctuation = [ ",", ".", "!", "?", ";", ":" ];
     var output = "";
     for (var string of splitString) {
         if (punctuation.indexOf(string) === -1) {
@@ -9,29 +9,31 @@ var findReplace = function (phrase, find, replace) {
                 output = output + replace + " ";
             } else {
                 output = output + string + " ";
-            }
+            }// end of if
         } else {
             output = output.slice(0, -1) + string + " ";
-        }
-    }
+        }// end of if
+    }// end of for
     var result = output.slice(0, -1);
 
     return result;
 };
 
 
-// $(document).ready(function() {
-//
-//     $("form#     ").submit(function(event) {
-//
-//         var sadness = $("input#sadness").val();
-//
-//         var result = magic(num);
-//
-//         $("#result p").text(result);
-//
-//         $("#result").show();
-//         event.preventDefault();
-//     });
-//
-// });
+$(document).ready(function() {
+
+    $("form#findReplace").submit(function(event) {
+
+        var phrase = $("input#phrase").val();
+        var find = $("input#find").val();
+        var replace = $("input#replace").val();
+
+        var result = findReplace(phrase, find, replace);
+
+        $("#result p").text(result);
+
+        $("#result").show();
+        event.preventDefault();
+    });
+
+});
