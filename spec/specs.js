@@ -11,4 +11,8 @@ describe('findReplace', function() {
         expect(findReplace('Hello, world!', 'Hello', 'Goodbye')).to.equal('Goodbye, world!');
     });
 
+    it("handles multiple words to replace correctly ", function() {
+        expect(findReplace('Hello Hello Hello, world!', 'Hello', 'Goodbye')).to.equal('Goodbye Goodbye Goodbye, world!');
+    });
+
 });
