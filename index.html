@@ -1,73 +1,75 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-  <title>Find'em then Replace'em</title>
+        <title>Find'em then Replace'em</title>
 
-  <meta content="width=device-width" name="viewport">
-  <link rel="icon" href="favicon.ico">
-  <link href="css/main.css" rel="stylesheet">
+        <meta content="width=device-width" name="viewport">
+        <link href="favicon.ico" rel="icon">
+        <link href="css/main.css" rel="stylesheet">
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-  <div class="wrapper">
+        <div class="wrapper">
 
-    <header>
+            <header>
 
-      <h1 class="site__title">Find and Replace</h1>
+                <h1 class="site__title">Find and Replace</h1>
 
-    </header>
+            </header>
 
-    <section class="main group">
+            <section class="main group">
 
-      <article class="main__article">
+                <article class="main__article">
 
-        <h2 class="main__title"></h2>
+                    <h2 class="main__title"></h2>
 
-        <form id="findReplace" class="main__form">
-          <div class="form__group">
-            <label class="form__label" for="phrase">Enter your prase:</label>
-            <input class="form__input" id="phrase"  type="text">
-            <label class="form__label" for="find">Enter your word to find:</label>
-            <input class="form__input" id="find" type="text">
-            <label class="form__label" for="replace">Enter your replacement word:</label>
-            <input class="form__input" id="replace" type="text">
-          </div>
+                    <form class="main__form" id="findReplace">
+                        <div class="form__group">
+                            <label class="form__label" for="phrase">Enter your prase:</label>
+                            <input class="form__input" id="phrase" type="text">
+                            <label class="form__label" for="find">Enter your word to find:</label>
+                            <input class="form__input" id="find" type="text">
+                            <label class="form__label" for="replace">Enter your replacement word:</label>
+                            <input class="form__input" id="replace" type="text">
+                        </div>
 
-          <button class="form__btn" type="submit">Replace!</button>
-        </form>
+                        <button class="form__btn" type="submit">Replace!</button>
+                    </form>
 
-        <div id="result" class="main__result">
-          <p></p>
+                    <div class="main__result" id="result">
+                        <p></p>
+                    </div>
+
+                </article>
+
+                <aside class=""></aside>
+
+            </section>
+
         </div>
+<!-- end of wrapper -->
 
-      </article>
+        <footer class="site__footer">
 
-      <aside class=""></aside>
+            <div class="footer__content">
 
-    </section>
+                <p>Copyright 2015 - fork me on
+                    <a href="https://github.com/CharlesAMoss/epic_Find-And-Replace">Github</a>
+                </p>
 
-  </div>
-  <!-- end of wrapper -->
+            </div>
 
-  <footer class="site__footer">
+        </footer>
 
-    <div class="footer__content">
-
-      <p>Copyright 2015 - fork me on <a href="https://github.com/CharlesAMoss/epic_Find-And-Replace">Github</a></p>
-
-    </div>
-
-  </footer>
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/main.js"></script>
-  <script type="text/javascript"></script>
-</body>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript"></script>
+    </body>
 
 </html>

@@ -1,7 +1,7 @@
-var findReplace = function (phrase, find, replace) {
+var findReplace = function(phrase, find, replace) {
 
     var splitString = phrase.split(/\s*\b\s*/);
-    var punctuation = [ ",", ".", "!", "?", ";", ":" ];
+    var punctuation = [",", ".", "!", "?", ";", ":"];
     var output = "";
     for (var string of splitString) {
         if (punctuation.indexOf(string) === -1) {
@@ -9,11 +9,11 @@ var findReplace = function (phrase, find, replace) {
                 output = output + replace + " ";
             } else {
                 output = output + string + " ";
-            }// end of if
+            } // end of if
         } else {
             output = output.slice(0, -1) + string + " ";
-        }// end of if
-    }// end of for
+        } // end of if
+    } // end of for
     var result = output.slice(0, -1);
 
     return result;
